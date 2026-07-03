@@ -1,0 +1,2 @@
+# Verilog Foundation
+# Verilog Foundation  A comprehensive collection of Verilog HDL projects covering the fundamentals of digital logic design. This repository includes Dataflow, Gate-Level, Behavioral, and Structural modeling, along with combinational and sequential circuits, complete testbenches, and well-documented README files for each project. Designed as a step-by-step learning journey for students, beginners, and aspiring VLSI engineers.
