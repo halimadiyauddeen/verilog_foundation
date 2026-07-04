@@ -1,0 +1,17 @@
+// Halima Diyauddeen — 2026 — NOT Gate (DUT)
+
+/*
+ * Module Name : not_gate
+ * Modeling    : Gate-Level
+ * Description : Design Under Test (DUT)
+ */
+
+module not_gate (
+    input  a,      // Input
+    output y       // NOT gate output
+);
+
+    // Implement the NOT gate using the built-in gate primitive
+    not (y, a);
+
+endmodule
