@@ -1,16 +1,16 @@
-# 1-Bit Comparator – Gate-Level Modeling
+ 1-Bit Comparator – Gate-Level Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **1-Bit Comparator** using **Verilog Gate-Level Modeling**. A comparator compares two 1-bit binary inputs and determines whether the first input is greater than, equal to, or less than the second input.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 1-Bit Comparator.
 - Implement a 1-Bit Comparator using Verilog gate primitives.
@@ -18,7 +18,7 @@ This project implements a **1-Bit Comparator** using **Verilog Gate-Level Modeli
 
 ---
 
-## Gate Primitives Used
+ Gate Primitives Used
 
 ```verilog
 not  (not_a, a);
@@ -30,7 +30,7 @@ and  (less, not_a, b);
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Greater | Equal | Less |
 |:-:|:-:|:-------:|:-----:|:----:|
@@ -41,7 +41,7 @@ and  (less, not_a, b);
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -51,7 +51,7 @@ and  (less, not_a, b);
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The comparator is implemented using the following Verilog gate primitives:
 
@@ -63,13 +63,13 @@ These primitives work together to determine whether input **A** is greater than,
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input combinations (`00`, `01`, `10`, and `11`) and displays the comparison results using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A=0 | B=0 | Greater=0 | Equal=1 | Less=0
@@ -80,7 +80,7 @@ A=1 | B=1 | Greater=0 | Equal=1 | Less=0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -91,6 +91,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 1-Bit Comparator is a fundamental combinational circuit used in arithmetic and digital systems. Implementing it using Verilog's built-in gate primitives demonstrates how multiple logic gates can be combined to perform comparison operations, laying the foundation for larger comparator designs.

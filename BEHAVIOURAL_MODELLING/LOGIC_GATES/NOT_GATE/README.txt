@@ -1,16 +1,16 @@
-# NOT Gate – Behavioral Modeling
+ NOT Gate – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **NOT Gate** using **Behavioral Modeling** in Verilog. Behavioral Modeling describes the functionality of a circuit using procedural statements inside an `always` block rather than gate primitives or continuous assignment statements.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Behavioral Modeling in Verilog.
 - Implement a NOT gate using an `always @(*)` block.
@@ -18,7 +18,7 @@ This project implements a **NOT Gate** using **Behavioral Modeling** in Verilog.
 
 ---
 
-## Behavioral Implementation
+ Behavioral Implementation
 
 ```verilog
 always @(*) begin
@@ -30,7 +30,7 @@ The `always @(*)` block ensures the output is updated whenever the input changes
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | Y |
 |:-:|:-:|
@@ -39,7 +39,7 @@ The `always @(*)` block ensures the output is updated whenever the input changes
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -49,7 +49,7 @@ The `always @(*)` block ensures the output is updated whenever the input changes
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -61,7 +61,7 @@ No `assign` statements or gate primitives are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input values using Verilog's `$random` system function.
 
@@ -74,7 +74,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 A=0 | Y=1
@@ -86,7 +86,7 @@ Because `$random` is used, the order of the input values may vary each time the 
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -98,6 +98,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **NOT Gate** demonstrates the simplest form of combinational logic using Behavioral Modeling in Verilog. It introduces the use of the bitwise NOT operator within an `always @(*)` block and reinforces the fundamentals of describing circuit behavior through procedural code.

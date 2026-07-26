@@ -1,16 +1,16 @@
-# 3x8 Decoder – Dataflow Modeling
+ 3x8 Decoder – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **3x8 Decoder** using **Verilog Dataflow Modeling**. A 3x8 decoder accepts a 3-bit binary input and activates exactly one of eight output lines corresponding to the input combination.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 3x8 Decoder.
 - Implement a 3x8 Decoder using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **3x8 Decoder** using **Verilog Dataflow Modeling**. A
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 Y0 = ~A & ~B & ~C
@@ -33,7 +33,7 @@ Y7 =  A &  B &  C
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | C | Y0 | Y1 | Y2 | Y3 | Y4 | Y5 | Y6 | Y7 |
 |:-:|:-:|:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
@@ -48,7 +48,7 @@ Y7 =  A &  B &  C
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -58,7 +58,7 @@ Y7 =  A &  B &  C
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The decoder is implemented using continuous assignment statements.
 
@@ -75,7 +75,7 @@ assign y7 =  a &  b &  c;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all eight possible input combinations from `000` to `111`.
 
@@ -83,7 +83,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A=0 B=0 C=0 | Y0=1 Y1=0 Y2=0 Y3=0 Y4=0 Y5=0 Y6=0 Y7=0
@@ -98,7 +98,7 @@ A=1 B=1 C=1 | Y0=0 Y1=0 Y2=0 Y3=0 Y4=0 Y5=0 Y6=0 Y7=1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -109,6 +109,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+Conclusion
 
 The 3x8 Decoder is a commonly used combinational circuit that converts a 3-bit binary input into one of eight active outputs. It is widely used in memory address decoding, instruction decoding, chip-select logic, and digital control systems.

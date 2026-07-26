@@ -1,16 +1,16 @@
-# 2x4 Decoder – Dataflow Modeling
+ 2x4 Decoder – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2x4 Decoder** using **Verilog Dataflow Modeling**. A 2x4 decoder accepts two binary input bits and activates exactly one of four output lines based on the input combination.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 2x4 Decoder.
 - Implement a 2x4 Decoder using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **2x4 Decoder** using **Verilog Dataflow Modeling**. A
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 Y0 = ~A & ~B
@@ -29,7 +29,7 @@ Y3 =  A &  B
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y0 | Y1 | Y2 | Y3 |
 |:-:|:-:|:--:|:--:|:--:|:--:|
@@ -40,7 +40,7 @@ Y3 =  A &  B
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -50,7 +50,7 @@ Y3 =  A &  B
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The decoder is implemented using continuous assignment statements.
 
@@ -63,7 +63,7 @@ assign y3 =  a &  b;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input combinations:
 
@@ -76,7 +76,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | Y0 = 1 | Y1 = 0 | Y2 = 0 | Y3 = 0
@@ -87,7 +87,7 @@ A = 1 | B = 1 | Y0 = 0 | Y1 = 0 | Y2 = 0 | Y3 = 1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -98,6 +98,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+Conclusion
 
 The 2x4 Decoder is a fundamental combinational circuit that converts a 2-bit binary input into one of four unique outputs. It serves as the foundation for designing larger decoders, memory address decoding circuits, and digital control systems.

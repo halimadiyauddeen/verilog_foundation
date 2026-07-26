@@ -1,16 +1,16 @@
-# XNOR Gate – Dataflow Modeling
+ XNOR Gate – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2-input XNOR gate** using **Verilog Dataflow Modeling**. The XNOR (Exclusive NOR) gate produces a HIGH output when both inputs are the same and a LOW output when the inputs are different. It is commonly referred to as the **equivalence gate**.
 
 ---
 
-## Objective
+ Objective
 
 - Learn how an XNOR gate works.
 - Implement an XNOR gate using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **2-input XNOR gate** using **Verilog Dataflow Modelin
 
 ---
 
-## Boolean Expression
+ Boolean Expression
 
 ```text
 Y = ~(A ^ B)
@@ -26,7 +26,7 @@ Y = ~(A ^ B)
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y |
 |:-:|:-:|:-:|
@@ -37,7 +37,7 @@ Y = ~(A ^ B)
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -47,7 +47,7 @@ Y = ~(A ^ B)
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The XNOR gate is implemented using a continuous assignment statement.
 
@@ -57,7 +57,7 @@ assign y = ~(a ^ b);
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input combinations:
 
@@ -70,7 +70,7 @@ The output is observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | Y = 1
@@ -81,7 +81,7 @@ A = 1 | B = 1 | Y = 1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -90,3 +90,10 @@ After completing this project, you should be able to:
 - Implement an XNOR gate using Dataflow Modeling.
 - Use the bitwise XOR (`^`) and NOT (`~`) operators in Verilog.
 - Verify the circuit through simulation.
+
+
+---
+
+ Conclusion
+
+The **XNOR Gate** demonstrates how Dataflow Modeling can be used to implement combinational logic using continuous assignment statements. By combining the bitwise XOR (`^`) and NOT (`~`) operators, the design produces a HIGH output only when both input signals are identical. This project provides a foundation for implementing digital circuits that perform equality checking, parity generation, and comparison operations.

@@ -1,35 +1,39 @@
-# All Logic Gates – Dataflow Modeling
+
+
+ All Logic Gates – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
-This project demonstrates the implementation of the seven fundamental digital logic gates using **Verilog Dataflow Modeling**. It combines all basic logic gates into a single module, making it an excellent reference for beginners learning Verilog HDL and digital logic design.
+This project shows how the seven basic logic gates can be implemented using **Dataflow Modeling** in Verilog. Instead of writing separate modules for each gate, all of them are included in one design. The project helped me understand how Verilog operators work and how different logic gates behave with different input combinations.
 
-The gates implemented are:
+The logic gates included are:
 
-- AND
-- OR
-- NOT
-- NAND
-- NOR
-- XOR
-- XNOR
-
----
-
-## Objective
-
-- Understand the operation of the basic logic gates.
-- Implement multiple logic gates using Dataflow Modeling.
-- Learn the use of Verilog logic operators.
-- Verify all gate outputs using a single testbench.
+* AND
+* OR
+* NOT
+* NAND
+* NOR
+* XOR
+* XNOR
 
 ---
 
-## Logic Expressions
+ Objective
+
+The main goals of this project are to:
+
+* Learn how the basic logic gates work.
+* Implement logic gates using Verilog Dataflow Modeling.
+* Practice using Verilog operators.
+* Verify the design by writing and running a testbench.
+
+---
+
+ Logic Expressions
 
 ```text
 AND   : Y = A & B
@@ -43,54 +47,54 @@ XNOR  : Y = ~(A ^ B)
 
 ---
 
-## Truth Table
+ Truth Table
 
-| A | B | AND | OR | NOT A | NOT B | NAND | NOR | XOR | XNOR |
-|:-:|:-:|:---:|:--:|:-----:|:-----:|:----:|:---:|:---:|:----:|
-| 0 | 0 |  0  | 0  |   1   |   1   |  1   |  1  |  0  |  1   |
-| 0 | 1 |  0  | 1  |   1   |   0   |  1   |  0  |  1  |  0   |
-| 1 | 0 |  0  | 1  |   0   |   1   |  1   |  0  |  1  |  0   |
-| 1 | 1 |  1  | 1  |   0   |   0   |  0   |  0  |  0  |  1   |
-
----
-
-## Project Files
-
-| File | Description |
-|------|-------------|
-| `all_logic_gates.v` | Design Under Test (DUT) implementing all logic gates |
-| `all_logic_gates_tb.v` | Testbench used to verify all outputs |
-| `README.md` | Project documentation |
+|  A  |  B  | AND |  OR | NOT A | NOT B | NAND | NOR | XOR | XNOR |
+| :-: | :-: | :-: | :-: | :---: | :---: | :--: | :-: | :-: | :--: |
+|  0  |  0  |  0  |  0  |   1   |   1   |   1  |  1  |  0  |   1  |
+|  0  |  1  |  0  |  1  |   1   |   0   |   1  |  0  |  1  |   0  |
+|  1  |  0  |  0  |  1  |   0   |   1   |   1  |  0  |  1  |   0  |
+|  1  |  1  |  1  |  1  |   0   |   0   |   0  |  0  |  0  |   1  |
 
 ---
 
-## Verilog Operators Used
+ Project Files
 
-| Operator | Function |
-|:--------:|----------|
-| `&` | AND |
-| `|` | OR |
-| `~` | NOT |
-| `^` | XOR |
-
-The NAND, NOR, and XNOR gates are implemented by combining these operators.
+| File                   | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `all_logic_gates.v`    | Verilog module containing all seven logic gates |
+| `all_logic_gates_tb.v` | Testbench used to test the design               |
+| `README.md`            | Project documentation                           |
 
 ---
 
-## Simulation
+ Verilog Operators Used
 
-The testbench applies all possible input combinations:
+| Operator | Function |    |
+| :------: | -------- | -- |
+|    `&`   | AND      |    |
+|     `    | `        | OR |
+|    `~`   | NOT      |    |
+|    `^`   | XOR      |    |
 
-- 00
-- 01
-- 10
-- 11
-
-The outputs of all logic gates are displayed simultaneously using the `$monitor` system task.
+The NAND, NOR, and XNOR outputs are obtained by combining these basic operators.
 
 ---
 
-## Expected Output
+ Simulation
+
+The testbench checks every possible input combination:
+
+* 00
+* 01
+* 10
+* 11
+
+The output for each logic gate is displayed in the console using the `$monitor` system task, making it easy to compare the simulation results with the truth table.
+
+---
+
+ Expected Output
 
 ```text
 A=0 B=0 | AND=0 OR=0 NOTA=1 NOTB=1 NAND=1 NOR=1 XOR=0 XNOR=1
@@ -101,19 +105,18 @@ A=1 B=1 | AND=1 OR=1 NOTA=0 NOTB=0 NAND=0 NOR=0 XOR=0 XNOR=1
 
 ---
 
-## Learning Outcomes
+ What I Learned
 
-After completing this project, you should be able to:
+Working on this project helped me to:
 
-- Explain the function of each basic logic gate.
-- Implement multiple logic gates in a single Verilog module.
-- Use Verilog Dataflow Modeling to describe combinational logic.
-- Apply Verilog operators (`&`, `|`, `~`, and `^`) correctly.
-- Develop and simulate a testbench for verifying digital circuits.
-- Interpret the simulation results for all basic logic gates.
+* Understand how each basic logic gate operates.
+* Use Dataflow Modeling to describe combinational circuits.
+* Become familiar with common Verilog operators.
+* Write a testbench to verify a digital design.
+* Compare simulation results with the expected truth table to confirm the design works correctly.
 
 ---
 
-## Conclusion
+ Conclusion
 
-This project provides a complete overview of the fundamental logic gates used in digital electronics. Mastering these gates is essential before progressing to universal gate implementations, combinational circuits, sequential circuits, and more advanced VLSI designs.
+This project gave me practical experience with the basic logic gates in Verilog. Since these gates are the building blocks of digital systems, understanding them is important before moving on to larger combinational circuits, sequential circuits, and other VLSI designs.

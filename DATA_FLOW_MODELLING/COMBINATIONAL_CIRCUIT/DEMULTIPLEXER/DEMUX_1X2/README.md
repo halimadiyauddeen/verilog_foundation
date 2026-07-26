@@ -1,16 +1,16 @@
-# 1x2 DEMUX – Dataflow Modeling
+ 1x2 DEMUX – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **1x2 Demultiplexer (DEMUX)** using **Verilog Dataflow Modeling**. A 1x2 DEMUX routes a single data input to one of two output lines based on the value of the select input.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 1x2 DEMUX.
 - Implement a 1x2 DEMUX using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **1x2 Demultiplexer (DEMUX)** using **Verilog Dataflow
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 Y0 = D & ~S
@@ -27,7 +27,7 @@ Y1 = D &  S
 
 ---
 
-## Truth Table
+ Truth Table
 
 | D | S | Y0 | Y1 |
 |:-:|:-:|:--:|:--:|
@@ -38,7 +38,7 @@ Y1 = D &  S
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -48,7 +48,7 @@ Y1 = D &  S
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The DEMUX is implemented using continuous assignment statements.
 
@@ -59,7 +59,7 @@ assign y1 = d & s;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible combinations of the data input (`D`) and the select input (`S`).
 
@@ -67,7 +67,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 D = 0 | S = 0 | Y0 = 0 | Y1 = 0
@@ -78,7 +78,7 @@ D = 1 | S = 1 | Y0 = 0 | Y1 = 1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -89,6 +89,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
-The 1x2 DEMUX is a fundamental combinational circuit that routes a single data input to one of two outputs using a select line. It serves as the foundation for larger demultiplexers and digital data-routing applications.
+The 1x2 DEMUX is a fundamental combinational circuit that routes a single data input to one of two outputs using a select line. It serves as the foundation for larger demultiplexers and digital data-routing applications.s

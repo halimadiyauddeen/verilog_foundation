@@ -1,16 +1,16 @@
-# 1×2 DEMUX – Behavioral Modeling
+ 1×2 DEMUX – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **1×2 Demultiplexer (DEMUX)** using **Behavioral Modeling** in Verilog. A 1×2 DEMUX routes a single data input to one of two output lines based on the value of the select input.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Behavioral Modeling in Verilog.
 - Implement a 1×2 DEMUX using an `always @(*)` block.
@@ -19,7 +19,7 @@ This project implements a **1×2 Demultiplexer (DEMUX)** using **Behavioral Mode
 
 ---
 
-## Behavioral Implementation
+ Behavioral Implementation
 
 ```verilog
 always @(*) begin
@@ -37,7 +37,7 @@ The `always @(*)` block continuously monitors the input and select signals, rout
 
 ---
 
-## Truth Table
+ Truth Table
 
 | SEL | IN | Y0 | Y1 |
 |:---:|:--:|:--:|:--:|
@@ -48,7 +48,7 @@ The `always @(*)` block continuously monitors the input and select signals, rout
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -58,7 +58,7 @@ The `always @(*)` block continuously monitors the input and select signals, rout
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -70,7 +70,7 @@ No `assign` statements or gate primitives are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random values for both the data input and the select input using Verilog's `$random` system function and applies them using concatenation.
 
@@ -85,7 +85,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 IN=0 | SEL=0 | Y0=0 | Y1=0
@@ -99,7 +99,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -112,6 +112,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **1×2 DEMUX** demonstrates how Behavioral Modeling can be used to implement data-routing circuits in Verilog. By combining an `always @(*)` block with a `case` statement and random test vectors, this project reinforces the principles of combinational logic design and efficient testbench development.

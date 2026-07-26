@@ -1,16 +1,16 @@
-# 8×1 Multiplexer (MUX) – Structural Modeling
+ 8×1 Multiplexer (MUX) – Structural Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements an **8×1 Multiplexer (MUX)** using **Structural Modeling** in Verilog. An 8×1 MUX selects one of eight data inputs (`i0` through `i7`) and routes the selected input to the output (`y`) based on the values of the three select inputs (`s2`, `s1`, and `s0`). The circuit is built using Verilog gate primitives.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Structural Modeling in Verilog.
 - Implement an 8×1 MUX using gate primitives.
@@ -19,7 +19,7 @@ This project implements an **8×1 Multiplexer (MUX)** using **Structural Modelin
 
 ---
 
-## Structural Implementation
+ Structural Implementation
 
 The design uses the following Verilog gate primitives:
 
@@ -31,7 +31,7 @@ The three select lines are first inverted. Eight AND gates generate the selectio
 
 ---
 
-## Truth Table
+ Truth Table
 
 | S2 | S1 | S0 | Output (Y) |
 |:--:|:--:|:--:|:----------:|
@@ -46,7 +46,7 @@ The three select lines are first inverted. Eight AND gates generate the selectio
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -56,7 +56,7 @@ The three select lines are first inverted. Eight AND gates generate the selectio
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -70,7 +70,7 @@ No `always` blocks, `assign` statements, or behavioral operators are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input values using Verilog's `$random` system function and applies them using concatenation.
 
@@ -85,7 +85,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 I0=1 | I1=0 | I2=1 | I3=0 | I4=1 | I5=0 | I6=1 | I7=0 | S2=1 | S1=0 | S0=1 | Y=0
@@ -110,6 +110,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **8×1 Multiplexer** demonstrates how Structural Modeling builds a larger combinational circuit by interconnecting basic logic gate primitives. Using three NOT gates, eight AND gates, and one OR gate, the design correctly selects one of eight input signals based on the three select lines, reinforcing the principles of digital hardware design using structural connections.

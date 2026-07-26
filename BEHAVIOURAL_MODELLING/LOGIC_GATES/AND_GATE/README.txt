@@ -1,16 +1,16 @@
-# AND Gate – Behavioral Modeling
+ AND Gate – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements an **AND Gate** using **Behavioral Modeling** in Verilog. Behavioral Modeling describes how a circuit functions using procedural statements inside an `always` block rather than gate primitives or continuous assignment statements.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Behavioral Modeling in Verilog.
 - Implement an AND gate using an `always @(*)` block.
@@ -18,7 +18,7 @@ This project implements an **AND Gate** using **Behavioral Modeling** in Verilog
 
 ---
 
-## Behavioral Implementation
+ Behavioral Implementation
 
 ```verilog
 always @(*) begin
@@ -30,7 +30,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y |
 |:-:|:-:|:-:|
@@ -41,7 +41,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -51,7 +51,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -63,7 +63,7 @@ No `assign` statements or gate primitives are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input combinations using Verilog's `$random` system function and applies them using concatenation.
 
@@ -76,7 +76,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 A=0 | B=1 | Y=0
@@ -90,7 +90,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -102,6 +102,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **AND Gate** demonstrates the fundamentals of Behavioral Modeling in Verilog. By describing the circuit's behavior with an `always @(*)` block and verifying it using randomly generated test vectors, this project provides a practical introduction to writing and testing combinational logic in a behavioral style.

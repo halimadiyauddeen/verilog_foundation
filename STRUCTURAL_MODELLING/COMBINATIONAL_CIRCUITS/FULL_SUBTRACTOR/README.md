@@ -1,16 +1,16 @@
-# Full Subtractor – Structural Modeling
+ Full Subtractor – Structural Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **Full Subtractor** using **Structural Modeling** in Verilog. A Full Subtractor subtracts two one-bit binary inputs (`a` and `b`) together with a borrow input (`bin`) and produces a **Difference** output and a **Borrow** output. The circuit is constructed using Verilog gate primitives.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Structural Modeling in Verilog.
 - Implement a Full Subtractor using logic gate primitives.
@@ -19,7 +19,7 @@ This project implements a **Full Subtractor** using **Structural Modeling** in V
 
 ---
 
-## Structural Implementation
+ Structural Implementation
 
 The design uses the following Verilog gate primitives:
 
@@ -45,7 +45,7 @@ or (borrow, and1, and2, and3);
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Bin | Diff | Borrow |
 |:-:|:-:|:---:|:----:|:------:|
@@ -60,7 +60,7 @@ or (borrow, and1, and2, and3);
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -70,7 +70,7 @@ or (borrow, and1, and2, and3);
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -85,7 +85,7 @@ No `always` blocks, `assign` statements, or behavioral operators are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input values using Verilog's `$random` system function and applies them using concatenation.
 
@@ -100,7 +100,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 A=0 | B=0 | Bin=0 | Diff=0 | Borrow=0
@@ -114,7 +114,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -127,6 +127,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **Full Subtractor** demonstrates how Structural Modeling builds arithmetic circuits by interconnecting basic logic gate primitives. Using XOR, NOT, AND, and OR gates, the design accurately computes the Difference and Borrow outputs, illustrating how binary subtraction can be implemented using simple hardware components.

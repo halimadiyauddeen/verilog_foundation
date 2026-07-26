@@ -1,16 +1,16 @@
-# 2-Bit Comparator – Dataflow Modeling
+ 2-Bit Comparator – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2-Bit Comparator** using **Verilog Dataflow Modeling**. A comparator compares two 2-bit binary numbers and determines whether the first number is greater than, equal to, or less than the second number.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 2-Bit Comparator.
 - Implement a 2-Bit Comparator using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **2-Bit Comparator** using **Verilog Dataflow Modeling
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 A > B = (A1 & ~B1) | (~(A1 ^ B1) & A0 & ~B0)
@@ -30,7 +30,7 @@ A < B = (~A1 & B1) | (~(A1 ^ B1) & ~A0 & B0)
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | A>B | A=B | A<B |
 |:--:|:--:|:--:|:--:|:--:|
@@ -53,7 +53,7 @@ A < B = (~A1 & B1) | (~(A1 ^ B1) & ~A0 & B0)
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -63,7 +63,7 @@ A < B = (~A1 & B1) | (~(A1 ^ B1) & ~A0 & B0)
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The comparator is implemented using continuous assignment statements.
 
@@ -80,7 +80,7 @@ assign a_lt_b = (~a1 & b1) |
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies representative input combinations to verify the comparator.
 
@@ -88,7 +88,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A=00 | B=00 | A>B=0 | A=B=1 | A<B=0
@@ -103,7 +103,7 @@ A=11 | B=11 | A>B=0 | A=B=1 | A<B=0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -114,6 +114,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 2-Bit Comparator extends the 1-Bit Comparator by comparing two binary numbers with two bits each. It forms the basis for larger comparators used in processors, arithmetic logic units (ALUs), and digital control systems.

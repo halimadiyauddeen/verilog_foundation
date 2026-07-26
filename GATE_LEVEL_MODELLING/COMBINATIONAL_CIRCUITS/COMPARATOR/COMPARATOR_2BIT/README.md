@@ -1,16 +1,16 @@
-# 2-Bit Comparator – Gate-Level Modeling
+ 2-Bit Comparator – Gate-Level Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2-Bit Comparator** using **Verilog Gate-Level Modeling**. The circuit compares two 2-bit binary numbers and determines whether the first number is greater than, equal to, or less than the second number.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 2-Bit Comparator.
 - Implement a 2-Bit Comparator using Verilog gate primitives.
@@ -18,7 +18,7 @@ This project implements a **2-Bit Comparator** using **Verilog Gate-Level Modeli
 
 ---
 
-## Gate Primitives Used
+ Gate Primitives Used
 
 ```verilog
 not
@@ -31,7 +31,7 @@ These gate primitives are combined to compare the most significant bits first. I
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Greater | Equal | Less |
 |:-:|:-:|:-------:|:-----:|:----:|
@@ -54,7 +54,7 @@ These gate primitives are combined to compare the most significant bits first. I
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -64,7 +64,7 @@ These gate primitives are combined to compare the most significant bits first. I
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The comparator is implemented entirely with Verilog's built-in gate primitives:
 
@@ -77,13 +77,13 @@ No continuous assignment (`assign`) statements are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies several combinations of 2-bit inputs and displays whether **A > B**, **A = B**, or **A < B** using the `$monitor` system task.
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -94,6 +94,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 2-Bit Comparator extends the concept of the 1-Bit Comparator by comparing two binary numbers bit by bit, starting from the most significant bit. It demonstrates how multiple gate primitives can be combined to build more complex digital circuits using Gate-Level Modeling.

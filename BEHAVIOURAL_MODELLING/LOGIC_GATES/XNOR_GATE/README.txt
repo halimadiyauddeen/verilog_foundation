@@ -1,16 +1,16 @@
-# XNOR Gate – Behavioral Modeling
+ XNOR Gate – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements an **XNOR Gate** using **Behavioral Modeling** in Verilog. Behavioral Modeling describes the functionality of a circuit using procedural statements inside an `always` block rather than gate primitives or continuous assignment statements.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Behavioral Modeling in Verilog.
 - Implement an XNOR gate using an `always @(*)` block.
@@ -18,7 +18,7 @@ This project implements an **XNOR Gate** using **Behavioral Modeling** in Verilo
 
 ---
 
-## Behavioral Implementation
+ Behavioral Implementation
 
 ```verilog
 always @(*) begin
@@ -30,7 +30,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y |
 |:-:|:-:|:-:|
@@ -41,7 +41,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -51,7 +51,7 @@ The `always @(*)` block ensures the output is updated whenever any input changes
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -64,7 +64,7 @@ No `assign` statements or gate primitives are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input combinations using Verilog's `$random` system function and applies them using concatenation.
 
@@ -77,7 +77,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 A=0 | B=0 | Y=1
@@ -91,7 +91,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -103,6 +103,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **XNOR Gate** demonstrates how equality logic can be implemented using Behavioral Modeling in Verilog. By describing the logic inside an `always @(*)` block and verifying it with randomly generated test vectors, this project reinforces the principles of behavioral design and combinational circuit verification.

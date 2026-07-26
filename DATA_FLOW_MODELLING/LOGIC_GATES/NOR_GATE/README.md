@@ -1,16 +1,16 @@
-# NOR Gate – Dataflow Modeling
+ NOR Gate – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2-input NOR gate** using **Verilog Dataflow Modeling**. The NOR gate is the inverse of the OR gate and is known as a **universal gate** because any digital logic circuit can be constructed using only NOR gates.
 
 ---
 
-## Objective
+ Objective
 
 - Learn how a NOR gate works.
 - Implement a NOR gate using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **2-input NOR gate** using **Verilog Dataflow Modeling
 
 ---
 
-## Boolean Expression
+ Boolean Expression
 
 ```text
 Y = ~(A | B)
@@ -26,7 +26,7 @@ Y = ~(A | B)
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y |
 |:-:|:-:|:-:|
@@ -37,7 +37,7 @@ Y = ~(A | B)
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -47,7 +47,7 @@ Y = ~(A | B)
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The NOR gate is implemented using a continuous assignment statement.
 
@@ -57,7 +57,7 @@ assign y = ~(a | b);
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input combinations:
 
@@ -70,7 +70,7 @@ The output is observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | Y = 1
@@ -81,7 +81,7 @@ A = 1 | B = 1 | Y = 0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -90,3 +90,10 @@ After completing this project, you should be able to:
 - Implement a NOR gate using Dataflow Modeling.
 - Use the `assign` statement with logical operators.
 - Verify the circuit through simulation.
+
+
+---
+
+ Conclusion
+
+The **NOR Gate** demonstrates how Dataflow Modeling can be used to describe combinational logic using continuous assignment statements. By combining the bitwise OR (`|`) and NOT (`~`) operators, the design produces a HIGH output only when both input signals are LOW. This project provides a foundation for understanding universal gates and their role in implementing more complex digital circuits.

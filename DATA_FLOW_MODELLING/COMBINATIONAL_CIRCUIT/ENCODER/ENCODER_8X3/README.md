@@ -1,10 +1,10 @@
-# 8x3 Encoder – Dataflow Modeling
+ 8x3 Encoder – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements an **8x3 Encoder** using **Verilog Dataflow Modeling**. An encoder converts one active input line into its equivalent binary code. An 8x3 encoder has eight input lines and three output bits.
 
@@ -12,7 +12,7 @@ This project implements an **8x3 Encoder** using **Verilog Dataflow Modeling**. 
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of an 8x3 Encoder.
 - Implement an 8x3 Encoder using Verilog Dataflow Modeling.
@@ -20,7 +20,7 @@ This project implements an **8x3 Encoder** using **Verilog Dataflow Modeling**. 
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 Y2 = D4 + D5 + D6 + D7
@@ -30,7 +30,7 @@ Y0 = D1 + D3 + D5 + D7
 
 ---
 
-## Truth Table
+ Truth Table
 
 | Active Input | Y2 | Y1 | Y0 |
 |:------------:|:--:|:--:|:--:|
@@ -45,7 +45,7 @@ Y0 = D1 + D3 + D5 + D7
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -55,7 +55,7 @@ Y0 = D1 + D3 + D5 + D7
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The encoder is implemented using continuous assignment statements.
 
@@ -67,7 +67,7 @@ assign y0 = d1 | d3 | d5 | d7;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all eight valid one-hot input combinations:
 
@@ -84,7 +84,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 00000001 -> 000
@@ -99,7 +99,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -111,6 +111,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 8x3 Encoder converts one of eight active input lines into a 3-bit binary code. It is commonly used in digital systems for data encoding and serves as the foundation for designing **priority encoders**, which resolve cases where multiple inputs are active simultaneously.

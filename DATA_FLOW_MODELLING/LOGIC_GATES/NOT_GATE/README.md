@@ -1,16 +1,16 @@
-# NOT Gate – Dataflow Modeling
+ NOT Gate – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **NOT gate** using **Verilog Dataflow Modeling**. The NOT gate, also known as an inverter, produces the complement of its input. It has one input and one output.
 
 ---
 
-## Objective
+ Objective
 
 - Learn how a NOT gate works.
 - Implement a NOT gate using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **NOT gate** using **Verilog Dataflow Modeling**. The 
 
 ---
 
-## Boolean Expression
+ Boolean Expression
 
 ```text
 Y = ~A
@@ -26,7 +26,7 @@ Y = ~A
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | Y |
 |:-:|:-:|
@@ -35,7 +35,7 @@ Y = ~A
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -45,7 +45,7 @@ Y = ~A
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The NOT gate is implemented using a continuous assignment statement.
 
@@ -55,7 +55,7 @@ assign y = ~a;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input values:
 
@@ -66,7 +66,7 @@ The output is observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | Y = 1
@@ -75,7 +75,7 @@ A = 1 | Y = 0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -84,3 +84,9 @@ After completing this project, you should be able to:
 - Use the bitwise NOT (`~`) operator in Verilog.
 - Develop a simple Verilog testbench.
 - Verify the circuit through simulation.
+
+---
+
+ Conclusion
+
+The **NOT Gate** demonstrates how Dataflow Modeling can be used to describe combinational logic using continuous assignment statements. By using the bitwise NOT (`~`) operator, the design produces the complement of the input signal. This project serves as a foundation for understanding inversion operations, which are widely used in digital logic and combinational circuit design.

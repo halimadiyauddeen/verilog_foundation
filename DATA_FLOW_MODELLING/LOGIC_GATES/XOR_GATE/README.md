@@ -1,16 +1,16 @@
-# XOR Gate – Dataflow Modeling
+ XOR Gate – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **2-input XOR gate** using **Verilog Dataflow Modeling**. The XOR (Exclusive OR) gate produces a HIGH output only when the two inputs are different. It is widely used in arithmetic circuits, parity generation, and error detection.
 
 ---
 
-## Objective
+ Objective
 
 - Learn how an XOR gate works.
 - Implement an XOR gate using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **2-input XOR gate** using **Verilog Dataflow Modeling
 
 ---
 
-## Boolean Expression
+ Boolean Expression
 
 ```text
 Y = A ^ B
@@ -26,7 +26,7 @@ Y = A ^ B
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Y |
 |:-:|:-:|:-:|
@@ -37,7 +37,7 @@ Y = A ^ B
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -47,7 +47,7 @@ Y = A ^ B
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The XOR gate is implemented using a continuous assignment statement.
 
@@ -57,7 +57,7 @@ assign y = a ^ b;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible input combinations:
 
@@ -70,7 +70,7 @@ The output is observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | Y = 0
@@ -81,7 +81,7 @@ A = 1 | B = 1 | Y = 0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -90,3 +90,10 @@ After completing this project, you should be able to:
 - Implement an XOR gate using Dataflow Modeling.
 - Use the bitwise XOR (`^`) operator in Verilog.
 - Verify the circuit through simulation.
+
+
+---
+
+ Conclusion
+
+The **XOR Gate** demonstrates how Dataflow Modeling can be used to describe combinational logic using continuous assignment statements. By using the bitwise XOR (`^`) operator, the design produces a HIGH output only when the input signals differ. This project provides a foundation for implementing arithmetic circuits such as Half Adders and Full Adders, where the XOR gate plays a key role.

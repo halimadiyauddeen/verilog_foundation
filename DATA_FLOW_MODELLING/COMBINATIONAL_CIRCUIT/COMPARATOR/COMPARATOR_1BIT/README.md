@@ -1,16 +1,16 @@
-# 1-Bit Comparator – Dataflow Modeling
+ 1-Bit Comparator – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **1-Bit Comparator** using **Verilog Dataflow Modeling**. A comparator is a combinational circuit that compares two binary inputs and determines whether one input is greater than, equal to, or less than the other.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 1-Bit Comparator.
 - Implement a 1-Bit Comparator using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **1-Bit Comparator** using **Verilog Dataflow Modeling
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 A > B =  A & ~B
@@ -30,7 +30,7 @@ A < B = ~A & B
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | A > B | A = B | A < B |
 |:-:|:-:|:-----:|:-----:|:-----:|
@@ -41,7 +41,7 @@ A < B = ~A & B
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -51,7 +51,7 @@ A < B = ~A & B
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The comparator is implemented using continuous assignment statements.
 
@@ -63,7 +63,7 @@ assign a_lt_b = ~a &  b;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all possible combinations of `A` and `B`.
 
@@ -71,7 +71,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | A>B = 0 | A=B = 1 | A<B = 0
@@ -82,7 +82,7 @@ A = 1 | B = 1 | A>B = 0 | A=B = 1 | A<B = 0
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -93,6 +93,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 1-Bit Comparator is a fundamental combinational circuit used to compare two single-bit binary values. It forms the foundation for designing larger comparators, such as 2-bit, 4-bit, and n-bit comparators used in arithmetic logic units (ALUs), processors, and digital control systems.

@@ -1,16 +1,16 @@
-# 4×1 Multiplexer (MUX) – Structural Modeling
+4×1 Multiplexer (MUX) – Structural Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **4×1 Multiplexer (MUX)** using **Structural Modeling** in Verilog. A 4×1 MUX selects one of four data inputs (`i0`, `i1`, `i2`, or `i3`) and routes the selected input to the output (`y`) based on the values of the two select inputs (`s1` and `s0`). The circuit is built using Verilog gate primitives.
 
 ---
 
-## Objective
+ Objective
 
 - Understand Structural Modeling in Verilog.
 - Implement a 4×1 MUX using gate primitives.
@@ -19,7 +19,7 @@ This project implements a **4×1 Multiplexer (MUX)** using **Structural Modeling
 
 ---
 
-## Structural Implementation
+ Structural Implementation
 
 The design uses the following Verilog gate primitives:
 
@@ -43,7 +43,7 @@ or (y, w0, w1, w2, w3);
 
 ---
 
-## Truth Table
+ Truth Table
 
 | S1 | S0 | Output (Y) |
 |:--:|:--:|:----------:|
@@ -54,7 +54,7 @@ or (y, w0, w1, w2, w3);
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -64,7 +64,7 @@ or (y, w0, w1, w2, w3);
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -78,7 +78,7 @@ No `always` blocks, `assign` statements, or behavioral operators are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input values using Verilog's `$random` system function and applies them using concatenation.
 
@@ -93,7 +93,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 I0=1 | I1=0 | I2=1 | I3=0 | S1=0 | S0=0 | Y=1
@@ -107,7 +107,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -120,6 +120,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **4×1 Multiplexer** demonstrates how Structural Modeling builds a combinational circuit by interconnecting basic logic gate primitives. Using two NOT gates, four AND gates, and one OR gate, the design correctly selects one of four input signals based on the select lines, illustrating the hardware implementation of a multiplexer.

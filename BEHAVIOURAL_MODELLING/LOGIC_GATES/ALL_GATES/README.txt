@@ -1,16 +1,16 @@
-# All Logic Gates – Behavioral Modeling
+ All Logic Gates – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements the seven fundamental logic gates using **Behavioral Modeling** in Verilog. A single module generates the outputs of **AND**, **OR**, **NAND**, **NOR**, **XOR**, **XNOR**, and the **NOT** operations for both inputs.
 
 ---
 
-## Objective
+ Objective
 
 - Understand how multiple combinational circuits can be implemented within a single `always @(*)` block.
 - Practice Behavioral Modeling using procedural assignments.
@@ -18,7 +18,7 @@ This project implements the seven fundamental logic gates using **Behavioral Mod
 
 ---
 
-## Behavioral Implementation
+ Behavioral Implementation
 
 ```verilog
 always @(*) begin
@@ -37,7 +37,7 @@ The `always @(*)` block updates every output whenever either input changes, ensu
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | AND | OR | NAND | NOR | XOR | XNOR | NOT A | NOT B |
 |:-:|:-:|:---:|:--:|:----:|:---:|:---:|:----:|:-----:|:-----:|
@@ -48,7 +48,7 @@ The `always @(*)` block updates every output whenever either input changes, ensu
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -58,7 +58,7 @@ The `always @(*)` block updates every output whenever either input changes, ensu
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The design uses:
 
@@ -74,7 +74,7 @@ No `assign` statements or gate primitives are used.
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench generates random input combinations using Verilog's `$random` system function and applies them using concatenation.
 
@@ -87,7 +87,7 @@ end
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 A=0 | B=1 | AND=0 | OR=1 | NAND=1 | NOR=0 | XOR=1 | XNOR=0 | NOT_A=1 | NOT_B=0
@@ -100,7 +100,7 @@ Because `$random` is used, the order of the input combinations may vary each tim
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -112,6 +112,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The **All Logic Gates** project combines the seven fundamental logic gates into a single Behavioral Modeling design. It demonstrates how multiple combinational outputs can be described efficiently within one `always @(*)` block while reinforcing the use of procedural assignments and simulation-based verification.

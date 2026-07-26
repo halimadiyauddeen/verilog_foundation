@@ -1,16 +1,16 @@
-# Full Subtractor – Dataflow Modeling
+ Full Subtractor – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **Full Subtractor** using **Verilog Dataflow Modeling**. A Full Subtractor is a combinational circuit that subtracts two single-bit binary numbers while considering a **Borrow-In (Bin)** from the previous stage. It produces two outputs: **Difference (Diff)** and **Borrow-Out (Bout)**.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a Full Subtractor.
 - Implement a Full Subtractor using Verilog Dataflow Modeling.
@@ -18,7 +18,7 @@ This project implements a **Full Subtractor** using **Verilog Dataflow Modeling*
 
 ---
 
-## Boolean Expressions
+ Boolean Expressions
 
 ```text
 Difference = A ^ B ^ Bin
@@ -28,7 +28,7 @@ Borrow Out = (~A & B) | (~(A ^ B) & Bin)
 
 ---
 
-## Truth Table
+ Truth Table
 
 | A | B | Bin | Diff | Bout |
 |:-:|:-:|:---:|:----:|:----:|
@@ -43,7 +43,7 @@ Borrow Out = (~A & B) | (~(A ^ B) & Bin)
 
 ---
 
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -53,7 +53,7 @@ Borrow Out = (~A & B) | (~(A ^ B) & Bin)
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The Full Subtractor is implemented using continuous assignment statements.
 
@@ -64,7 +64,7 @@ assign bout = (~a & b) | (~(a ^ b) & bin);
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies all eight possible combinations of `A`, `B`, and `Bin`.
 
@@ -72,7 +72,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A = 0 | B = 0 | Bin = 0 | DIFF = 0 | Bout = 0
@@ -87,7 +87,7 @@ A = 1 | B = 1 | Bin = 1 | DIFF = 1 | Bout = 1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -99,6 +99,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The Full Subtractor extends the functionality of the Half Subtractor by incorporating a borrow input. It is an essential building block for designing multi-bit binary subtractors and arithmetic units used in digital systems.

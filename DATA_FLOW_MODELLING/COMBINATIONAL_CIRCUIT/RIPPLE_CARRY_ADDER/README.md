@@ -1,16 +1,16 @@
-# 4-Bit Ripple Carry Adder – Dataflow Modeling
+ 4-Bit Ripple Carry Adder – Dataflow Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **4-Bit Ripple Carry Adder (RCA)** using **Verilog Dataflow Modeling**. A Ripple Carry Adder adds two 4-bit binary numbers together with an optional carry input. The carry generated from each bit position propagates (ripples) to the next higher bit.
 
 ---
 
-## Objective
+ Objective
 
 - Understand the operation of a 4-Bit Ripple Carry Adder.
 - Implement a 4-Bit Ripple Carry Adder using Verilog Dataflow Modeling.
@@ -18,19 +18,8 @@ This project implements a **4-Bit Ripple Carry Adder (RCA)** using **Verilog Dat
 
 ---
 
-## Block Diagram
 
-```text
- A[3:0] ----\
-             >---- 4-Bit Ripple Carry Adder ----> SUM[3:0]
- B[3:0] ----/                     |
-                                  |
-                                COUT
-```
-
----
-
-## Project Files
+ Project Files
 
 | File | Description |
 |------|-------------|
@@ -40,7 +29,7 @@ This project implements a **4-Bit Ripple Carry Adder (RCA)** using **Verilog Dat
 
 ---
 
-## Verilog Implementation
+ Verilog Implementation
 
 The Ripple Carry Adder is implemented using the Verilog addition operator.
 
@@ -50,7 +39,7 @@ assign {cout, sum} = a + b + cin;
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench applies several combinations of two 4-bit numbers and a carry input.
 
@@ -58,7 +47,7 @@ The outputs are observed using the `$monitor` system task.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 A=0000 | B=0000 | Cin=0 | Sum=0000 | Cout=0
@@ -72,7 +61,7 @@ A=1111 | B=1111 | Cin=1 | Sum=1111 | Cout=1
 
 ---
 
-## Learning Outcomes
+ Learning Outcomes
 
 After completing this project, you should be able to:
 
@@ -83,6 +72,6 @@ After completing this project, you should be able to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 The 4-Bit Ripple Carry Adder is a fundamental arithmetic circuit used in digital systems to add binary numbers. In Dataflow Modeling, it can be implemented efficiently using the Verilog addition operator. In later sections of this repository, the same circuit will be implemented using Structural Modeling by connecting multiple Full Adder modules to illustrate hierarchical hardware design.
