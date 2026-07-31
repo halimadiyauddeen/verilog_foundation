@@ -1,25 +1,38 @@
 module siso_tb();
-reg clk,rst,si;
+
+reg clk, rst_n, si;
 wire so;
 
-siso dut(clk,rst,si,so);
+siso dut(clk, rst_n, si, so);
 
-
-//clock generation
+// Clock generation
 initial begin
-forever #5 clk=~clk;
+    clk = 0;
+    forever #5 clk = ~clk;
 end
 
 initial begin
-$monitor ("0t=%t,clk=%b,rst=%b,si=%b,so=%b,", $time,clk,rst,si,so);
+    $monitor("t=%0t clk=%b rst_n=%b si=%b so=%b",
+             $time, clk, rst_n, si, so);
 
-rst=0; rst=1;
-#10;
+    rst_n = 0;
+    si = 0;
 
-si=1; #5;
-si=0; #5;
-si=0; #5;
-si=1; #5;
-$finish;
-end 
+    #10;
+    rst_n = 1;
+
+    #2  si = 1;
+    #10 si = 0;
+    #10 si = 0;
+    #10 si = 1;
+
+    #20;
+    $finish;
+end
+
+initial begin
+    $dumpfile("siso1.vcd");
+    $dumpvars(0, siso_tb);
+end
+
 endmodule

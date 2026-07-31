@@ -42,5 +42,9 @@ initial begin
 
     $finish;
 end
+initial begin
+     $dumpfile("sipo.vcd");
+    $dumpvars(0, sipo_tb);
+end
 
 endmodule

@@ -1,16 +1,16 @@
-# PISO Register – Behavioral Modeling
+ PISO Register – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Overview
+ Overview
 
 This project implements a **4-bit Parallel-In Serial-Out (PISO) Register** using **Verilog Behavioral Modeling**. The register loads four input bits simultaneously and shifts them out one bit at a time on each clock pulse.
 
 ---
 
-## Project Objective
+ Project Objective
 
 The objectives of this project are to:
 
@@ -23,7 +23,7 @@ The objectives of this project are to:
 
 ---
 
-## Verilog Design
+ Verilog Design
 
 The register is implemented using an `always @(posedge clk)` block. When the **load** signal is active, the parallel input data is loaded into the register. Otherwise, the stored data is shifted one bit at a time to produce the serial output.
 
@@ -38,13 +38,13 @@ end
 
 ---
 
-## Simulation
+ Simulation
 
 The testbench first loads a 4-bit value into the register by enabling the **load** signal. It then disables the load signal and applies clock pulses to shift the stored data out serially. The outputs are monitored using the `$monitor` system task to verify the register's operation.
 
 ---
 
-## Expected Output
+ Expected Output
 
 ```text
 Load  Data In   Serial Out
@@ -58,7 +58,7 @@ Load  Data In   Serial Out
 
 ---
 
-## What I Learned
+ What I Learned
 
 While working on this project, I learned how to:
 
@@ -69,6 +69,6 @@ While working on this project, I learned how to:
 
 ---
 
-## Conclusion
+ Conclusion
 
 This project successfully implements a 4-bit PISO Register using Verilog Behavioral Modeling. The simulation confirms that the register correctly loads parallel data and shifts it out one bit at a time on each clock pulse. This project helped strengthen my understanding of sequential logic and shift register operations.

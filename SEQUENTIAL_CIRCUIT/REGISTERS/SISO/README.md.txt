@@ -1,10 +1,10 @@
-# SISO Shift Register – Behavioral Modeling
+ SISO Shift Register – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
 ---
 
-## Introduction
+ Introduction
 
 This project implements a **Serial-In Serial-Out (SISO) Shift Register** using **Behavioral Modeling** in Verilog. A SISO shift register stores data and shifts it one bit at a time with every clock pulse. The data enters the register serially and also leaves the register serially.
 
@@ -12,7 +12,7 @@ This project helps in understanding how sequential circuits work and how data mo
 
 ---
 
-## Objective
+ Objective
 
 The objectives of this project are to:
 
@@ -23,13 +23,13 @@ The objectives of this project are to:
 
 ---
 
-## Circuit Description
+ Circuit Description
 
 The register accepts one bit of serial data through the input (`serial_in`). On every rising edge of the clock, the data shifts one position to the right. After passing through all the stages, the last bit appears at the serial output (`serial_out`).
 
 ---
 
-## Working Principle
+ Working Principle
 
 * Data is entered one bit at a time.
 * On each positive edge of the clock, all bits shift to the next stage.
@@ -39,13 +39,13 @@ The register accepts one bit of serial data through the input (`serial_in`). On 
 ---
 
 
-## Simulation
+ Simulation
 
 The testbench generates a clock signal and applies different serial input values. The register shifts the data on every positive edge of the clock, while the output is observed using the `$monitor` statement.
 
 ---
 
-## Sample Output
+ Sample Output
 
 ```text
 CLK=1 SI=1 SO=0
@@ -59,7 +59,7 @@ The exact output depends on the sequence of input bits applied during the simula
 
 ---
 
-## What I Learned
+ What I Learned
 
 From this project, I learned:
 
@@ -70,6 +70,6 @@ From this project, I learned:
 
 ---
 
-## Conclusion
+ Conclusion
 
 This project helped me understand the operation of a Serial-In Serial-Out shift register and how data is shifted through the register one bit at a time. It also improved my understanding of sequential logic and Behavioral Modeling in Verilog.
