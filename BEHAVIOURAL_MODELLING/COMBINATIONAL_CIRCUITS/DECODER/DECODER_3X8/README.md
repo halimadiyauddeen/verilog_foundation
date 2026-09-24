@@ -1,4 +1,4 @@
- 2×4 Decoder – Behavioral Modeling
+ 3×8 Decoder – Behavioral Modeling
 
 **Author:** Halima Diyauddeen
 
@@ -6,14 +6,14 @@
 
  Overview
 
-This project implements a **2×4 Decoder** using **Behavioral Modeling** in Verilog. A 2×4 Decoder accepts a 2-bit binary input and activates one of four output lines corresponding to the input value.
+This project implements a **3×8 Decoder** using **Behavioral Modeling** in Verilog. A 3×8 Decoder accepts a 3-bit binary input and activates one of eight output lines corresponding to the input value.
 
 ---
 
  Objective
 
 - Understand Behavioral Modeling in Verilog.
-- Implement a 2×4 Decoder using an `always @(*)` block.
+- Implement a 3×8 Decoder using an `always @(*)` block.
 - Learn how to use the `case` statement for combinational logic.
 - Verify the design using randomly generated test vectors.
 
@@ -27,12 +27,20 @@ always @(*) begin
     y1 = 1'b0;
     y2 = 1'b0;
     y3 = 1'b0;
+    y4 = 1'b0;
+    y5 = 1'b0;
+    y6 = 1'b0;
+    y7 = 1'b0;
 
     case (a)
-        2'b00: y0 = 1'b1;
-        2'b01: y1 = 1'b1;
-        2'b10: y2 = 1'b1;
-        2'b11: y3 = 1'b1;
+        3'b000: y0 = 1'b1;
+        3'b001: y1 = 1'b1;
+        3'b010: y2 = 1'b1;
+        3'b011: y3 = 1'b1;
+        3'b100: y4 = 1'b1;
+        3'b101: y5 = 1'b1;
+        3'b110: y6 = 1'b1;
+        3'b111: y7 = 1'b1;
     endcase
 end
 ```
@@ -43,12 +51,16 @@ The `always @(*)` block continuously monitors the input and uses a `case` statem
 
  Truth Table
 
-| A | Y0 | Y1 | Y2 | Y3 |
-|:--:|:--:|:--:|:--:|:--:|
-| 00 | 1 | 0 | 0 | 0 |
-| 01 | 0 | 1 | 0 | 0 |
-| 10 | 0 | 0 | 1 | 0 |
-| 11 | 0 | 0 | 0 | 1 |
+| A | Active Output |
+|:--:|:-------------:|
+| 000 | Y0 |
+| 001 | Y1 |
+| 010 | Y2 |
+| 011 | Y3 |
+| 100 | Y4 |
+| 101 | Y5 |
+| 110 | Y6 |
+| 111 | Y7 |
 
 ---
 
@@ -56,8 +68,8 @@ The `always @(*)` block continuously monitors the input and uses a `case` statem
 
 | File | Description |
 |------|-------------|
-| `decoder_2x4.v` | Design Under Test (DUT) |
-| `decoder_2x4_tb.v` | Testbench used to verify the DUT |
+| `decoder_3x8.v` | Design Under Test (DUT) |
+| `decoder_3x8_tb.v` | Testbench used to verify the DUT |
 | `README.md` | Project documentation |
 
 ---
@@ -76,7 +88,7 @@ No `assign` statements or gate primitives are used.
 
  Simulation
 
-The testbench generates random 2-bit input values using Verilog's `$random` system function.
+The testbench generates random 3-bit input values using Verilog's `$random` system function.
 
 ```verilog
 repeat (10) begin
@@ -85,7 +97,7 @@ repeat (10) begin
 end
 ```
 
-> **Note:** Although the input `a` is 2 bits wide, it is declared as a single vector (`reg [1:0] a`). Therefore, the testbench uses:
+> **Note:** Although the input `a` is 3 bits wide, it is declared as a single vector (`reg [2:0] a`). Therefore, the testbench uses:
 >
 > ```verilog
 > a = $random;
@@ -98,10 +110,9 @@ end
  Sample Output
 
 ```text
-A=00 | Y0=1 | Y1=0 | Y2=0 | Y3=0
-A=01 | Y0=0 | Y1=1 | Y2=0 | Y3=0
-A=10 | Y0=0 | Y1=0 | Y2=1 | Y3=0
-A=11 | Y0=0 | Y1=0 | Y2=0 | Y3=1
+A=000 | Y0=1 | Y1=0 | Y2=0 | Y3=0 | Y4=0 | Y5=0 | Y6=0 | Y7=0
+A=101 | Y0=0 | Y1=0 | Y2=0 | Y3=0 | Y4=0 | Y5=1 | Y6=0 | Y7=0
+A=111 | Y0=0 | Y1=0 | Y2=0 | Y3=0 | Y4=0 | Y5=0 | Y6=0 | Y7=1
 ...
 ```
 
@@ -124,4 +135,4 @@ After completing this project, you should be able to:
 
  Conclusion
 
-The **2×4 Decoder** demonstrates how a `case` statement can be used in Behavioral Modeling to implement combinational logic efficiently. This approach improves readability and scalability, making it well suited for larger decoding circuits. It also illustrates the appropriate use of `$random` with vector signals, reinforcing good Verilog coding practices.
+The **3×8 Decoder** demonstrates how Behavioral Modeling and the `case` statement can be used to implement larger combinational decoding circuits. It reinforces good Verilog coding practices while illustrating the appropriate use of `$random` with vector signals for simulation and verification.
